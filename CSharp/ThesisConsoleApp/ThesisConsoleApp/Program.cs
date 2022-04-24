@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using ThesisConsoleApp;
+﻿using ThesisConsoleApp;
 
 Console.WriteLine("Sync Code Execution (FileRead and Calculate will run 100 times)");
 Console.WriteLine("---------------------------------------------------------------");
