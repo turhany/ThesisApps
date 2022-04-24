@@ -1,2 +1,2 @@
 # ThesisApps
-Ahmet Yesevi University Thesis Sampe Apps Repo
+Ahmet Yesevi University Thesis Sample Apps Repo
