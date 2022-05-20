@@ -23,7 +23,7 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
                 times.Add(elapsedTime);
-                Console.WriteLine($"File Read Sync Flow Complete Miliseconds({i}): {elapsedTime}");                
+                Console.WriteLine($"File Read Sync Flow Complete Miliseconds({i}): {elapsedTime}");
             }
             Console.WriteLine($"File Read Sync Flow Completed > Average: {Queryable.Average(times.AsQueryable())}");
             Console.WriteLine(String.Empty);
@@ -57,8 +57,8 @@ namespace ThesisConsoleApp
         public void ReadFileAsyncFlowBenchmark()
         {
             Console.WriteLine(String.Empty);
-            Console.WriteLine("File Read Async Flow Started");            
-            
+            Console.WriteLine("File Read Async Flow Started");
+
             var times = new List<long>();
             var fileReadSyncFlow = new Stopwatch();
             for (int i = 1; i <= 10; i++)
@@ -118,7 +118,8 @@ namespace ThesisConsoleApp
         {
             for (int i = 1; i <= 100; i++)
             {
-                var result = Math.Sqrt(i);
+                var result = Math.Pow(i, 2);
+                Console.WriteLine($"{i} = {result}");
             }
         }
     }

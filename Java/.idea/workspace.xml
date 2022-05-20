@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07fa57ec-7445-4efe-a874-aba40041ba74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CSharp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/BenchmarkMethods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/BenchmarkMethods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2972nmoniQHdMQRM7p37RSJID9e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/ThesisApps/Java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThesisApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ThesisCloneApp2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ThesisCloneApp2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07fa57ec-7445-4efe-a874-aba40041ba74" name="Changes" comment="" />
+      <created>1652449974303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652449974303</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.nio.file.NoSuchFileException" package="java.nio.file" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BenchmarkMethods.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BenchmarkMethods.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
