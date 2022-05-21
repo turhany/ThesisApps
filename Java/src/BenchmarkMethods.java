@@ -50,7 +50,7 @@ public class BenchmarkMethods {
             calculateSyncFlowStop = System.nanoTime();
             Long elapsedTime = calculateSyncFlowStop - calculateSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("Calculate Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Calculate Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS) + " - NanoSecond: " + elapsedTime);
         }
         System.out.println("Calculate Sync Flow Completed > Average: "+ TimeAverage(times));
         System.out.println();

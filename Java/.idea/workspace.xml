@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -43,14 +44,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Projects/ThesisApps/Java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/ThesisApps/Java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
