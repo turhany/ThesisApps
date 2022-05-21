@@ -42,7 +42,7 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Start();
                 for (int t = 0; t < 1000; t++)
                 {
-                    ReadFile();
+                    Calculate();
                 }
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
@@ -116,10 +116,9 @@ namespace ThesisConsoleApp
 
         private void Calculate()
         {
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= 10000; i++)
             {
                 var result = Math.Pow(i, 2);
-                Console.WriteLine($"{i} = {result}");
             }
         }
     }

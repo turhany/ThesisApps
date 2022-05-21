@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
 public class BenchmarkMethods {
@@ -27,7 +28,7 @@ public class BenchmarkMethods {
             fileReadSyncFlowStop = System.nanoTime();
             Long elapsedTime = fileReadSyncFlowStop - fileReadSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("File Read Sync Flow Complete Miliseconds( "+ i + " ): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("File Read Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
         System.out.println("File Read Sync Flow Completed > Average:  "+ TimeAverage(times));
         System.out.println();
@@ -49,7 +50,7 @@ public class BenchmarkMethods {
             calculateSyncFlowStop = System.nanoTime();
             Long elapsedTime = calculateSyncFlowStop - calculateSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("Calculate Sync Flow Complete Miliseconds( "+ i + " ): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Calculate Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
         System.out.println("Calculate Sync Flow Completed > Average: "+ TimeAverage(times));
         System.out.println();
@@ -63,12 +64,19 @@ public class BenchmarkMethods {
         Long fileReadSyncFlowStart, fileReadSyncFlowStop;
         for (int i = 1; i <= 10; i++)
         {
+            List<FutureTask<Void>> tasks = new ArrayList<>();
+
             ExecutorService es = Executors.newCachedThreadPool();
             fileReadSyncFlowStart = System.nanoTime();
+
             for (int t = 0; t < 1000; t++)
             {
                 Runnable task = () -> ReadFile();
-                es.execute(task);
+                tasks.add((FutureTask<Void>) es.submit(task));
+            }
+
+            while (tasks.stream().anyMatch(p -> !p.isDone())) {
+                //System.out.println("Tasks is not finished yet...");
             }
             es.shutdown();
             boolean finished = es.awaitTermination(1, TimeUnit.MINUTES);
@@ -76,7 +84,7 @@ public class BenchmarkMethods {
             fileReadSyncFlowStop = System.nanoTime();
             Long elapsedTime = fileReadSyncFlowStop - fileReadSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("File Read Async Flow Complete Miliseconds( "+ i + " ): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("File Read Async Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
         System.out.println("File Read Async Flow Completed > Average: "+ TimeAverage(times));
         System.out.println();
@@ -90,20 +98,28 @@ public class BenchmarkMethods {
         Long calculateAsyncFlowStart, calculateAsyncFlowStop;
         for (int i = 1; i <= 10; i++)
         {
+            List<FutureTask<Void>> tasks = new ArrayList<>();
+
             ExecutorService es = Executors.newCachedThreadPool();
             calculateAsyncFlowStart = System.nanoTime();
+
             for (int t = 0; t < 1000; t++)
             {
                 Runnable task = () -> Calculate();
-                es.execute(task);
+                tasks.add((FutureTask<Void>) es.submit(task));
             }
+
+            while (tasks.stream().anyMatch(p -> !p.isDone())) {
+               // System.out.println("Tasks are not finished yet...");
+            }
+
             es.shutdown();
             boolean finished = es.awaitTermination(1, TimeUnit.MINUTES);
 
             calculateAsyncFlowStop = System.nanoTime();
             Long elapsedTime = calculateAsyncFlowStop - calculateAsyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("Calculate Async Flow Complete Miliseconds( "+ i + " ): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Calculate Async Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
         System.out.println("Calculate Sync FlowCompleted > Average:  "+ TimeAverage(times));
         System.out.println();
@@ -119,9 +135,8 @@ public class BenchmarkMethods {
     }
 
     private void Calculate() {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10000; i++) {
             double result = Math.pow(i, 2);
-            //System.out.println(i + " = " + result);
         }
     }
 

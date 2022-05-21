@@ -8,7 +8,15 @@
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Files/Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp/ThesisConsoleApp/ThesisConsoleApp/ThesisConsoleApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Files/Turhan_Yildirim_DONEM_PROJE.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThesisApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ThesisApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BenchmarkMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BenchmarkMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,12 +114,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BenchmarkMethods.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BenchmarkMethods.java</url>
-          <line>125</line>
+          <line>140</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
