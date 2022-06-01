@@ -15,7 +15,7 @@ public class BenchmarkMethods {
 
     public void ReadFileSyncFlowBenchmark() {
         System.out.println();
-        System.out.println("File Read Sync Flow Started");
+        System.out.println("Dosya okuma işlemi için Senkron akış başladı");
         List<Long> times = new ArrayList<>();
         Long fileReadSyncFlowStart, fileReadSyncFlowStop;
         for (int i = 1; i <= 10; i++)
@@ -28,16 +28,16 @@ public class BenchmarkMethods {
             fileReadSyncFlowStop = System.nanoTime();
             Long elapsedTime = fileReadSyncFlowStop - fileReadSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("File Read Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Dosya okuma işlemi için Senkron akış tamamlandı - (Deneme:"+ i + ") - MiliSaniye: " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
-        System.out.println("File Read Sync Flow Completed > Average:  "+ TimeAverage(times));
+        System.out.println("Dosya okuma işlemi için Senkron akış tamamlandı > Ortalama: "+ TimeAverage(times) + " MiliSaniye");
         System.out.println();
         System.out.println();
     }
 
     public void CalculateSyncFlowBenchmark() {
         System.out.println();
-        System.out.println("Calculate Sync Flow Started");
+        System.out.println("Hesaplama işlemi için Senkron akış başladı");
         List<Long> times = new ArrayList<>();
         Long calculateSyncFlowStart, calculateSyncFlowStop;
         for (int i = 1; i <= 10; i++)
@@ -50,16 +50,16 @@ public class BenchmarkMethods {
             calculateSyncFlowStop = System.nanoTime();
             Long elapsedTime = calculateSyncFlowStop - calculateSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("Calculate Sync Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS) + " - NanoSecond: " + elapsedTime);
+            System.out.println("Hesaplama işlemi için Senkron akış tamamlandı - (Deneme:"+ i + ") - MiliSaniye: " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS) + " - NanoSaniye: " + elapsedTime);
         }
-        System.out.println("Calculate Sync Flow Completed > Average: "+ TimeAverage(times));
+        System.out.println("Dosya okuma işlemi için Senkron akış tamamlandı > Ortalama: "+ TimeAverage(times)+ " MiliSaniye");
         System.out.println();
         System.out.println();
     }
 
     public void ReadFileAsyncFlowBenchmark() throws InterruptedException {
         System.out.println();
-        System.out.println("File Read Async Flow Started");
+        System.out.println("Dosya okuma işlemi için Asenkron akış başladı");
         List<Long> times = new ArrayList<>();
         Long fileReadSyncFlowStart, fileReadSyncFlowStop;
         for (int i = 1; i <= 10; i++)
@@ -84,16 +84,16 @@ public class BenchmarkMethods {
             fileReadSyncFlowStop = System.nanoTime();
             Long elapsedTime = fileReadSyncFlowStop - fileReadSyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("File Read Async Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Dosya okuma işlemi için Asenkron akış tamamlandı - (Deneme:"+ i + ") - MiliSaniye: " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
-        System.out.println("File Read Async Flow Completed > Average: "+ TimeAverage(times));
+        System.out.println("Dosya okuma işlemi için Asenkron akış tamamlandı > Ortalama: "+ TimeAverage(times)+ " MiliSaniye");
         System.out.println();
         System.out.println();
     }
 
     public void CalculateAsyncFlowBenchmark() throws InterruptedException {
         System.out.println();
-        System.out.println("Calculate Async Flow Started");
+        System.out.println("Hesaplama işlemi için Asenkron akış başladı");
         List<Long> times = new ArrayList<>();
         Long calculateAsyncFlowStart, calculateAsyncFlowStop;
         for (int i = 1; i <= 10; i++)
@@ -119,9 +119,9 @@ public class BenchmarkMethods {
             calculateAsyncFlowStop = System.nanoTime();
             Long elapsedTime = calculateAsyncFlowStop - calculateAsyncFlowStart;
             times.add(elapsedTime);
-            System.out.println("Calculate Async Flow Complete Miliseconds("+ i + "): " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
+            System.out.println("Hesaplama işlemi için Asenkron akış tamamlandı - (Deneme:"+ i + ") - MiliSaniye: " + TimeUnit.MILLISECONDS.convert(elapsedTime, TimeUnit.NANOSECONDS));
         }
-        System.out.println("Calculate Sync FlowCompleted > Average:  "+ TimeAverage(times));
+        System.out.println("Dosya okuma işlemi için Asenkron akış tamamlandı > Ortalama: "+ TimeAverage(times)+ " MiliSaniye");
         System.out.println();
         System.out.println();
     }

@@ -9,7 +9,7 @@ namespace ThesisConsoleApp
         public void ReadFileSyncFlowBenchmark()
         {
             Console.WriteLine(String.Empty);
-            Console.WriteLine("File Read Sync Flow Started");
+            Console.WriteLine("Dosya okuma işlemi için Senkron akış başladı");
             var times = new List<long>();
             var fileReadSyncFlow = new Stopwatch();
             for (int i = 1; i <= 10; i++)
@@ -23,9 +23,9 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
                 times.Add(elapsedTime);
-                Console.WriteLine($"File Read Sync Flow Complete Miliseconds({i}): {elapsedTime}");
+                Console.WriteLine($"Dosya okuma işlemi için Senkron akış tamamlandı - (Deneme:{i}) - MiliSaniye: {elapsedTime}");
             }
-            Console.WriteLine($"File Read Sync Flow Completed > Average: {Queryable.Average(times.AsQueryable())}");
+            Console.WriteLine($"Dosya okuma işlemi için Senkron akış tamamlandı > Ortalama: {Queryable.Average(times.AsQueryable())} MiliSaniye");
             Console.WriteLine(String.Empty);
             Console.WriteLine(String.Empty);
         }
@@ -33,7 +33,7 @@ namespace ThesisConsoleApp
         public void CalculateSyncFlowBenchmark()
         {
             Console.WriteLine(String.Empty);
-            Console.WriteLine("Calculate Sync Flow Started");
+            Console.WriteLine("Hesaplama işlemi için Senkron akış başladı");
             var times = new List<long>();
             var fileReadSyncFlow = new Stopwatch();
             for (int i = 1; i <= 10; i++)
@@ -47,9 +47,9 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
                 times.Add(elapsedTime);
-                Console.WriteLine($"Calculate Sync Flow Complete Miliseconds({i}): {elapsedTime}");
+                Console.WriteLine($"Hesaplama işlemi için Senkron akış tamamlandı - (Deneme:{i}) - MiliSaniye: {elapsedTime}");
             }
-            Console.WriteLine($"Calculate Sync Flow Completed > Average: {Queryable.Average(times.AsQueryable())}");
+            Console.WriteLine($"Hesaplama işlemi için Senkron akış tamamlandı > Ortalama: {Queryable.Average(times.AsQueryable())} MiliSaniye");
             Console.WriteLine(String.Empty);
             Console.WriteLine(String.Empty);
         }
@@ -57,7 +57,7 @@ namespace ThesisConsoleApp
         public void ReadFileAsyncFlowBenchmark()
         {
             Console.WriteLine(String.Empty);
-            Console.WriteLine("File Read Async Flow Started");
+            Console.WriteLine("Dosya okuma işlemi için Asenkron akış başladı");
 
             var times = new List<long>();
             var fileReadSyncFlow = new Stopwatch();
@@ -74,9 +74,9 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
                 times.Add(elapsedTime);
-                Console.WriteLine($"File Read Async Flow Complete Miliseconds({i}): {elapsedTime}");
+                Console.WriteLine($"Dosya okuma işlemi için Asenkron akış tamamlandı - (Deneme:{i}) - MiliSaniye: {elapsedTime}");
             }
-            Console.WriteLine($"File Read Async Flow Completed > Average: {Queryable.Average(times.AsQueryable())}");
+            Console.WriteLine($"Dosya okuma işlemi için Asenkron akış tamamlandı > Ortalama: {Queryable.Average(times.AsQueryable())} MiliSaniye");
             Console.WriteLine(String.Empty);
             Console.WriteLine(String.Empty);
         }
@@ -84,7 +84,7 @@ namespace ThesisConsoleApp
         public void CalculateAsyncFlowBenchmark()
         {
             Console.WriteLine(String.Empty);
-            Console.WriteLine("Calculate Async Flow Started");
+            Console.WriteLine("Hesaplama işlemi için Asenkron akış başladı");
 
             var times = new List<long>();
             var fileReadSyncFlow = new Stopwatch();
@@ -101,9 +101,9 @@ namespace ThesisConsoleApp
                 fileReadSyncFlow.Stop();
                 var elapsedTime = fileReadSyncFlow.ElapsedMilliseconds;
                 times.Add(elapsedTime);
-                Console.WriteLine($"Calculate Async Flow Complete Miliseconds({i}): {elapsedTime}");
+                Console.WriteLine($"Hesaplama işlemi için Asenkron akış tamamlandı - (Deneme:{i}) - MiliSaniye: {elapsedTime}");
             }
-            Console.WriteLine($"Calculate Async Flow Completed > Average: {Queryable.Average(times.AsQueryable())}");
+            Console.WriteLine($"Hesaplama işlemi için Asenkron akış tamamlandı > Ortalama: {Queryable.Average(times.AsQueryable())} MiliSaniye");
             Console.WriteLine(String.Empty);
             Console.WriteLine(String.Empty);
         }
